@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Jogos Lucrativos</title>
+    <style>
+        /* Estilos CSS aqui */
+        body {
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Estilize o container da mensagem */
+        .mensagem {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .btn-concordo {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-concordo:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="mensagem">
+        <h1>Bem-vindo ao LUCRO CERTO!</h1>
+        <p>É necessário fazer o depósito mínimo de R$ 50,00 para iniciar. São centenas de jogos para você lucrar e mudar de vida!</p>
+        <button id="concordoBtn" class="btn-concordo">CONCORDO</button>
+    </div>
+
+    <script>
+        // JavaScript inline aqui
+        const concordoBtn = document.getElementById("concordoBtn");
+
+        concordoBtn.addEventListener("click", function() {
+            // Redireciona para a página 2 após o clique no botão
+            window.location.href = "pagina2.html";
+        });
+    </script>
+</body>
+</html>
